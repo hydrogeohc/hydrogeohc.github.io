@@ -40,6 +40,94 @@
 </script>
 </head>
 <body>
+
+<!-- Decorative page backdrop: NASA Blue Marble imagery (public domain) under a
+     hand-built agent-network + graticule overlay. Purely presentational. -->
+<div class="page-bg" aria-hidden="true">
+  <div class="page-bg__photo"></div>
+  <svg class="page-bg__net" viewBox="0 0 1440 900" preserveAspectRatio="xMidYMid slice" focusable="false">
+    <g class="bg-globe">
+      <circle cx="1215" cy="205" r="250"/>
+      <ellipse cx="1215" cy="205" rx="237.8" ry="250"/>
+      <ellipse cx="1215" cy="205" rx="185.8" ry="250"/>
+      <ellipse cx="1215" cy="205" rx="101.7" ry="250"/>
+      <line x1="1215.0" y1="-45.0" x2="1215.0" y2="455.0"/>
+      <ellipse cx="1215" cy="421.5" rx="125.0" ry="21.3"/>
+      <ellipse cx="1215" cy="330.0" rx="216.5" ry="36.8"/>
+      <ellipse cx="1215" cy="205.0" rx="250.0" ry="42.5"/>
+      <ellipse cx="1215" cy="80.0" rx="216.5" ry="36.8"/>
+      <ellipse cx="1215" cy="-11.5" rx="125.0" ry="21.3"/>
+    </g>
+    <g class="bg-edges">
+      <line x1="118" y1="168" x2="262" y2="96"/>
+      <line x1="118" y1="168" x2="58" y2="286"/>
+      <line x1="118" y1="168" x2="186" y2="330"/>
+      <line x1="262" y1="96" x2="330" y2="252"/>
+      <line x1="262" y1="96" x2="452" y2="176"/>
+      <line x1="330" y1="252" x2="186" y2="330"/>
+      <line x1="330" y1="252" x2="410" y2="396"/>
+      <line x1="186" y1="330" x2="250" y2="470"/>
+      <line x1="186" y1="330" x2="96" y2="470"/>
+      <line x1="58" y1="286" x2="96" y2="470"/>
+      <line x1="452" y1="176" x2="585" y2="300"/>
+      <line x1="410" y1="396" x2="585" y2="300"/>
+      <line x1="410" y1="396" x2="250" y2="470"/>
+      <line x1="410" y1="396" x2="528" y2="560"/>
+      <line x1="250" y1="470" x2="352" y2="648"/>
+      <line x1="96" y1="470" x2="196" y2="720"/>
+      <line x1="585" y1="300" x2="700" y2="452"/>
+      <line x1="585" y1="300" x2="1010" y2="470"/>
+      <line x1="700" y1="452" x2="528" y2="560"/>
+      <line x1="700" y1="452" x2="860" y2="596"/>
+      <line x1="528" y1="560" x2="352" y2="648"/>
+      <line x1="528" y1="560" x2="640" y2="700"/>
+      <line x1="352" y1="648" x2="196" y2="720"/>
+      <line x1="352" y1="648" x2="452" y2="792"/>
+      <line x1="640" y1="700" x2="760" y2="818"/>
+      <line x1="640" y1="700" x2="860" y2="596"/>
+      <line x1="860" y1="596" x2="985" y2="720"/>
+      <line x1="860" y1="596" x2="1010" y2="470"/>
+      <line x1="985" y1="720" x2="1120" y2="620"/>
+      <line x1="985" y1="720" x2="760" y2="818"/>
+      <line x1="1120" y1="620" x2="1268" y2="742"/>
+      <line x1="1010" y1="470" x2="1120" y2="620"/>
+      <line x1="196" y1="720" x2="452" y2="792"/>
+    </g>
+    <g class="bg-nodes">
+      <circle cx="118" cy="168" r="3"/>
+      <circle cx="262" cy="96" r="3"/>
+      <circle cx="330" cy="252" r="3"/>
+      <circle cx="186" cy="330" r="4.5"/>
+      <circle cx="58" cy="286" r="3"/>
+      <circle cx="452" cy="176" r="3"/>
+      <circle cx="410" cy="396" r="4.5"/>
+      <circle cx="250" cy="470" r="3"/>
+      <circle cx="96" cy="470" r="3"/>
+      <circle cx="585" cy="300" r="4.5"/>
+      <circle cx="700" cy="452" r="3"/>
+      <circle cx="528" cy="560" r="4.5"/>
+      <circle cx="352" cy="648" r="3"/>
+      <circle cx="196" cy="720" r="3"/>
+      <circle cx="640" cy="700" r="3"/>
+      <circle cx="860" cy="596" r="4.5"/>
+      <circle cx="985" cy="720" r="4.5"/>
+      <circle cx="1120" cy="620" r="3"/>
+      <circle cx="1268" cy="742" r="3"/>
+      <circle cx="760" cy="818" r="3"/>
+      <circle cx="1010" cy="470" r="3"/>
+      <circle cx="452" cy="792" r="3"/>
+    </g>
+    <g class="bg-rings">
+      <circle cx="186" cy="330" r="13"/>
+      <circle cx="410" cy="396" r="13"/>
+      <circle cx="585" cy="300" r="13"/>
+      <circle cx="528" cy="560" r="13"/>
+      <circle cx="860" cy="596" r="13"/>
+      <circle cx="985" cy="720" r="13"/>
+    </g>
+  </svg>
+</div>
+
 <a class="skip-link" href="#main">Skip to content</a>
 
 <header class="site-header" id="siteHeader">
@@ -576,6 +664,7 @@
     <p class="footer-links">
       <a href="https://github.com/hydrogeohc" rel="me noopener" target="_blank">GitHub</a>
       <a href="https://www.linkedin.com/in/ying-jung-chen" rel="me noopener" target="_blank">LinkedIn</a>
+      <span class="credit">Backdrop: <a href="https://visibleearth.nasa.gov/images/57752/blue-marble-land-surface-shallow-water-and-shaded-topography" rel="noopener" target="_blank">NASA Blue Marble</a></span>
     </p>
   </div>
 </footer>

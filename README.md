@@ -9,6 +9,7 @@ no npm install, no framework. Open `index.html` and it works.
 index.html      All content (hero, research, projects, publications, experience, skills, service, contact)
 styles.css      Design tokens + layout. Light/dark themes live in the :root / [data-theme="dark"] blocks
 script.js       Theme toggle, mobile nav, scroll-spy, reveal-on-scroll, footer year
+assets/         earth.jpg — NASA Blue Marble, public domain, used as the page backdrop
 _headers        Security headers (Cloudflare Pages)
 robots.txt      Crawler rules
 sitemap.xml     Single-page sitemap
@@ -51,6 +52,20 @@ Connect the repo, leave the build command empty, and set the output directory to
 
 **Change colors** — edit the `--accent` / `--amber` variables at the top of `styles.css`.
 Both themes are defined in one place.
+
+**Tune the backdrop** — a fixed, full-page layer: NASA Blue Marble imagery under a
+hand-built agent-network + graticule SVG (inline in `index.html`, so it themes via CSS).
+Two knobs per theme in `styles.css`:
+
+```
+--bg-photo-op   photo opacity   (light .075 / dark .10)
+--bg-net-op     network opacity (light .30  / dark .34)
+```
+
+Those photo values are not arbitrary. Text contrast was measured against the image's
+actual darkest and brightest pixels composited through every surface; at these opacities
+all 80 text-on-surface pairs clear WCAG AA (4.5:1) in both themes. Raising them will
+push `--text-faint` below AA on plain sections, so re-check if you do.
 
 **Link a CV** — the site intentionally ships without resume PDFs. To add one, drop the file
 in a new `assets/` folder and add a `<li>` to the `.link-row` list in the hero.
